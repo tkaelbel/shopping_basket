@@ -16,5 +16,7 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@master
       - name: Generate build files
-        uses: sosedoff/actions/golang-build@master
+        uses: izumin5210/action-go-crossbuild@v1
+        with:
+          package: .
 
